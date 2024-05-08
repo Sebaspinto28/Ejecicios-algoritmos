@@ -6,3 +6,5 @@ while count <=n:
     factorial*=count
     count+=1
 print(factorial)
+
+
