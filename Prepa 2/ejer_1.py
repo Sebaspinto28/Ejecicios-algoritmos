@@ -16,7 +16,7 @@ letras={'A':0, 'B':1, 'C':2,'D':3,'E':4,'F':5,'G':6, 'H':7,'I':8 }
 for coordenada in coordenadas:
     colum=letras[coordenada[0]]
     row= int(coordenada[1])-1
-    print(colum)
+    
 
     correct= tarjeta_de_coordenadas[row][colum]
     user_ans=input(f'ingrese el valor que se encuentre la coordenada {coordenada}')
