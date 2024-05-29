@@ -16,7 +16,7 @@ def val_caja(caja):
 
     
 def val_hora(hora):
-    while not hora.isnumeric():
+    while not hora.isnumeric() or not int(hora) in range(1,9):
         print("Epa por aqui no es ")
         hora=input("coloque el numero de horas que vera en su clase\nm-->")
     return hora
