@@ -26,6 +26,8 @@ def regis_materias(materias):
 
 def regis_incrip(inscripciones,estudiantes,materias):
     dni=input("mete la cedula")
+    estudiante_selec=None
+    materia_estudiante_lista=[]
     for estudiante in estudiantes:
         if estudiante.dni==estudiante:
             estudiante_selec=estudiante
@@ -34,8 +36,13 @@ def regis_incrip(inscripciones,estudiantes,materias):
         for i,materia in enumerate(materias):
             print(i,materia.name,materia.name,materia.credits,sep=" - ")
         while True:
-            materia_i=int(input(""))
-
+            materia_i=int(input("Please enter the number of subject you want or -1 if you want to exit:"))
+            if materia_i!=1:
+                materia_estudiante_lista.append(materias[materia_i])
+            else:
+                break
+    
+            
 def main():
     estudiantes=[]
     materias=[]

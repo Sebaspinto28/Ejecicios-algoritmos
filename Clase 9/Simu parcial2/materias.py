@@ -10,7 +10,7 @@ class Pregrado(Materias):
         self.depa=depa
 
 
-class Posgrado(Materias):
+class Postgrado(Materias):
     def __init__(self, name, credits,diplo):
         super().__init__(name, credits)
         self.diplo=diplo
